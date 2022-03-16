@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #1F2937;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #3A69D2;
+    width: 100%;
+}
+
+header h1{
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+header h4{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 51px;
+    color: #FFFFFF;
+}
+
+.buttons{
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.body-generator{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.buttons button{
+    margin: 42px 11px;
+    width: 142px;
+    height: 45px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: #D1D4F4;
+    color: #4A4E74;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 16px;
+    transition: .2s;
+}
+
+.buttons button:hover{
+    border: 2px solid #FFFFFF;
+}
+
+.buttons button:active{
+    border: 2px solid rgb(6, 206, 6);
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 550px;
+    padding: 0px 39px;
+    margin: 0 auto;
+}
+
+.task p{
+    color: #D5D4D8;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+                                        /* SERVICE OUTPUTS */
+.service-outputs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 550px;
+    padding: 0px 39px;
+    margin: 20px auto 0 auto;
+    position: relative;
+}
+
+.service-outputs h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    color: #F5F5F5;
+}
+
+.service-outputs button{
+    position: absolute;
+    left: 150px;
+    background: none;
+    border: none;
+    color: #D5D4D8;
+    font-size: 8px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+    cursor: pointer;
+}
+.mow-lawn button{
+    margin-left: 12px;
+}
+.pull-weeds button{
+    margin-left: 16px;
+}
+
+.service-outputs h2{
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 20px;
+    color: #F5F5F5;
+    position: absolute;
+    right: 39px;
+}
+
+.service-outputs span{
+    color: #918E9B;;
+}
+
+.border{
+    max-width: 471px;
+    height: 1px;
+    background-color: #C3C6DB;
+    margin: 29px auto 11px auto;
+}
+
+.notes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 550px;
+    padding: 0px 39px;
+    margin: 0 auto;
+}
+
+.notes p{
+    color: #D5D4D8;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 32px;
+}
+
+.cash-output{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 550px;
+    padding: 0px 39px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cash-output p{
+    color: #F5F5F5;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 15px;
+    position: absolute;
+    top: 11px;
+    left: 39px;
+    /*display: none;*/                                      /*DISPLAY NONE*/
+}
+
+.cash-output h2{
+    color: #F5F5F5;
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 32px;
+    position: absolute;
+    right: 39px;
+    top: 11px;
+}
+
+footer{
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 0px auto;
+}
+
+footer button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 100%;
+    max-width: 473px;
+    background-color: #3A69D2;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+footer button:hover{
+    border: 2px solid #FFFFFF;
+}
+
+footer button:active{
+    border: 2px solid rgb(6, 206, 6);
+}
+
+footer button p{
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-left: 12px;
+}
+
+@media only screen and (max-width: 530px) {
+
+    .buttons button{
+        font-size: 12px;
+    }
+
+    .task{
+        width: 90%;
+        padding: 0px;
+    }
+
+    .border{
+        width: 90%;
+    }
+
+    .notes{
+        width: 90%;
+        padding: 0px;
+    }
+
+    .cash-output p{
+        left: 5%;
+    }
+
+    .cash-output h2{
+        right: 5%;
+    }
+    footer button{
+        width: 90%;
+    }
+}

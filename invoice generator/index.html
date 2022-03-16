@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Karla:wght@400;500;800&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Invoice Generator</title>
+</head>
+<body>
+    <header>
+        <h1>Invoice creator</h1>
+        <h4>Thanks for choosing GoodCorp, LLC!</h4>
+    </header>
+    <section class="body-generator">
+        <!-- SERVICES BUTTONS -->
+        <div class="buttons">
+            <button id="wash-car-btn">Wash Car: $10</button>
+            <button id="mow-lawn-btn">Mow Lawn: $20</button>
+            <button id="pull-weeds-btn">Pull Weeds: $30</button>
+        </div>
+
+        <div class="task">
+            <p>TASK</p>
+            <p>TOTAL</p>
+        </div>
+        <!-- SERVICES OUTPUTS -->
+        <div id="wash-car" class="wash-car service-outputs"></div>
+        <div id="mow-lawn" class="mow-lawn service-outputs"></div>
+        <div id="pull-weeds" class="pull-weeds service-outputs"></div>
+
+        <div class="border"></div>
+
+        <div class="notes">
+            <p>NOTES</p>
+            <p>TOTAL AMOUNT</p>
+        </div>
+        <!-- TOTAL PRICE -->
+        <div class="cash-output">
+            <p id="pay-message">We accept cash, credit card, or PayPal</p>
+            <h2 id="total-amount"></h2>
+        </div>
+        <!-- BUTTON CONFIRM-->
+        <footer>
+            <button><img src="images/mail-icon.svg"><p>Send invoice</p></button>
+        </footer>
+
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
