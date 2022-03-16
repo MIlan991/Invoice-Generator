@@ -125,7 +125,7 @@ function closePullWeeds(){
 sendInvoiceBtn.addEventListener('click', () => {
     if(totalAmount > 0){
         invoiceMessage.textContent = `Invoice successfully sent!`
-    } else{invoiceMessage.textContent = ``}
+    } else{invoiceMessage.innerHTML = `<p id="error-message">Please, choose service you need.</p>`}
 
     washCarOutput.innerHTML = ``;
     mownLawnOutput.innerHTML = ``;
