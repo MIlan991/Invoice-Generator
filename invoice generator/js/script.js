@@ -136,15 +136,3 @@ sendInvoiceBtn.addEventListener('click', () => {
     totalAmount = service1 + service2 + service3
     totalAmountEl.innerHTML = `$${totalAmount}`
 })
-
-// PAYMENT MESSAGE
-// function paymentMessage(){
-//     if(totalAmount === 0){
-//         payMessage.style.display = 'none'
-//         console.log('0')
-//     } else{
-//         payMessage.style.display = 'block'
-//         console.log('$$$')
-//     }
-// }
-// paymentMessage()
