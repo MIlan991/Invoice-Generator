@@ -211,6 +211,7 @@ footer{
     max-width: 550px;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 100px auto 0px auto;
@@ -223,6 +224,7 @@ footer button{
     height: 44px;
     width: 100%;
     max-width: 473px;
+    margin-bottom: 30px;
     background-color: #3A69D2;
     border: 1px solid transparent;
     border-radius: 7px;
@@ -245,6 +247,14 @@ footer button p{
     line-height: 24px;
     color: #FFFFFF;
     margin-left: 12px;
+}
+
+footer p{
+    color: rgb(6, 206, 6);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
 }
 
 @media only screen and (max-width: 530px) {

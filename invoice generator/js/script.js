@@ -12,6 +12,9 @@ let payMessage = document.getElementById('pay-message')
 
 let totalAmountEl = document.getElementById('total-amount')
 
+const sendInvoiceBtn = document.getElementById('invoice-btn')
+const invoiceMessage = document.getElementById('invoice-message')
+
 const services = [
     {
         serviceWashCar: "Wash Car",
@@ -44,6 +47,8 @@ washCarBtn.addEventListener('click', () =>{
       <button onclick="closeCarWash()">Remove</button>
       <h2><span>$</span>${services[0].priceWashCar}</h2>
       `
+      invoiceMessage.textContent = ``
+
         service1 = 0;
         service1 += services[0].priceWashCar
         totalAmount = service1 + service2 + service3
@@ -72,6 +77,8 @@ mowLawnBtn.addEventListener('click', () =>{
       <button onclick="closeMowLawn()">Remove</button>
       <h2><span>$</span>${services[1].priceMowLawn}</h2>
       `
+      invoiceMessage.textContent = ``
+      
       service2 = 0;
       service2 += services[1].priceMowLawn
       totalAmount = service1 + service2 + service3
@@ -98,6 +105,8 @@ pullWeedsBtn.addEventListener('click', () =>{
       <button onclick="closePullWeeds()">Remove</button>
       <h2><span>$</span>${services[2].pricePullWeeds}</h2>
       `
+      invoiceMessage.textContent = ``
+      
       service3 = 0;
       service3 += services[2].pricePullWeeds
       totalAmount = service1 + service2 + service3
@@ -111,3 +120,28 @@ function closePullWeeds(){
     totalAmount = service1 + service2 + service3
     totalAmountEl.innerHTML = `$${totalAmount}`
 }
+
+// SEND INVOICE BUTTON
+sendInvoiceBtn.addEventListener('click', () => {
+    washCarOutput.innerHTML = ``;
+    mownLawnOutput.innerHTML = ``;
+    pullWeedsOutput.innerHTML = ``;
+    service1 = 0;
+    service2 = 0;
+    service3 = 0;
+    totalAmount = service1 + service2 + service3
+    totalAmountEl.innerHTML = `$${totalAmount}`
+    invoiceMessage.textContent = `Invoice successfully sent!`
+})
+
+// PAYMENT MESSAGE
+// function paymentMessage(){
+//     if(totalAmount === 0){
+//         payMessage.style.display = 'none'
+//         console.log('0')
+//     } else{
+//         payMessage.style.display = 'block'
+//         console.log('$$$')
+//     }
+// }
+// paymentMessage()
