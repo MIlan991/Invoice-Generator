@@ -123,6 +123,10 @@ function closePullWeeds(){
 
 // SEND INVOICE BUTTON
 sendInvoiceBtn.addEventListener('click', () => {
+    if(totalAmount > 0){
+        invoiceMessage.textContent = `Invoice successfully sent!`
+    } else{invoiceMessage.textContent = ``}
+
     washCarOutput.innerHTML = ``;
     mownLawnOutput.innerHTML = ``;
     pullWeedsOutput.innerHTML = ``;
@@ -131,7 +135,6 @@ sendInvoiceBtn.addEventListener('click', () => {
     service3 = 0;
     totalAmount = service1 + service2 + service3
     totalAmountEl.innerHTML = `$${totalAmount}`
-    invoiceMessage.textContent = `Invoice successfully sent!`
 })
 
 // PAYMENT MESSAGE
