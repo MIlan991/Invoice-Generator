@@ -191,6 +191,7 @@ header h4{
     position: absolute;
     top: 11px;
     left: 39px;
+    width: 60%;
     /*display: none;*/                                      /*DISPLAY NONE*/
 }
 
@@ -255,6 +256,14 @@ footer button p{
     .task{
         width: 90%;
         padding: 0px;
+    }
+
+    .service-outputs{
+        padding-left: 24px;
+    }
+
+    .service-outputs h2{
+        right: 22px;
     }
 
     .border{

@@ -53,7 +53,8 @@ washCarBtn.addEventListener('click', () =>{
 // WASH CAR REMOVE
 function closeCarWash(){
     washCarOutput.innerHTML = ``;
-    totalAmount -= services[0].priceWashCar
+    service1 = 0;
+    totalAmount = service1 + service2 + service3
     totalAmountEl.innerHTML = `$${totalAmount}`
 }
 
@@ -80,7 +81,8 @@ mowLawnBtn.addEventListener('click', () =>{
 // MOW LAWN REMOVE
 function closeMowLawn(){
     mownLawnOutput.innerHTML = ``;
-    totalAmount -= services[1].priceMowLawn
+    service2 = 0
+    totalAmount = service1 + service2 + service3
     totalAmountEl.innerHTML = `$${totalAmount}`
 }
 
@@ -105,6 +107,7 @@ pullWeedsBtn.addEventListener('click', () =>{
 // PULL WEED REMOVE
 function closePullWeeds(){
     pullWeedsOutput.innerHTML = ``;
-    totalAmount -= services[2].pricePullWeeds
+    service3 = 0
+    totalAmount = service1 + service2 + service3
     totalAmountEl.innerHTML = `$${totalAmount}`
 }
